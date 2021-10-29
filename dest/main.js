@@ -1,5 +1,8 @@
 function alertSweet() {
-    swal("Thành công", "Đơn hàng của bạn đã hoàn thành", "success");
+    swal("Thành công", "Đơn hàng của bạn đã hoàn thành", "success")
+        .then(function(){
+            window.location = "https://shobee-source.vercel.app/";
+        });
 }
 
 window.addEventListener('load', (event) => {
