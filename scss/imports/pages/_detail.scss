@@ -1,0 +1,60 @@
+.detailwrapper {
+    margin-top: 12px;
+    .container {
+        .item__img {
+            max-width: 100%;
+            img {
+                object-fit: cover;
+            }
+        }
+        .item__content {
+            margin-top: 12px;
+            .item__content--title {
+                font-family: "r";
+                font-size: 28px;
+            }
+            .item__content--purchase {
+                margin-top: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                .price {
+                    font-family: "b";
+                    font-size: 24px;
+                    color: $price-cl;
+                }
+                .purchased {
+                    font-family: "l";
+                    font-size: 12px;
+                    color: rgba(128, 128, 128, 1);
+                }
+            }
+        }
+        .item__buy {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'r';
+            font-size: 16px;
+            .add {
+                min-width: 160px;
+                padding: 16px 20px;
+                // border: 1px solid black;
+                // border-radius: 5px;
+                color: black;
+            }
+            .buy {
+                min-width: 180px;
+                padding: 16px 20px;
+                text-align: center;
+                background-color: $gray-cl;
+                border-radius: 5px;
+                color: $black-cl;
+            }
+            .buy:hover {
+                background-color: rgba(196, 196, 196, 0.6);
+            }
+        }
+    }
+}

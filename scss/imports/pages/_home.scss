@@ -1,0 +1,57 @@
+// CSS HOMEPAGE
+.homewrapper {
+    .container {
+        .title {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'b';
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .item-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 16px;
+            align-items: center;
+            .item {
+                max-width: 182px; 
+                border-radius: 8px 8px 0 0;
+                .item__img {
+                    width: 100%;
+                    img {
+                        object-fit: cover;
+                        border-radius: 8px 8px 0 0;
+                    }
+                }
+                .item__content {
+                    transform: translateY(-5px);
+                    padding: 12px 8px;
+                    background-color: $gray-cl;
+                    border-radius: 0 0 8px 8px;
+                    .item__content--title {
+                        font-family: 'r';
+                        font-size: 16px;
+                        color: $black-cl;
+
+                    }
+                    .item__content--purchase {
+                        padding: 8px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        .price {
+                            font-family: 'b';
+                            color:$price-cl;
+                        }
+                        .purchased {
+                            font-family: 'l';
+                            color: rgba(128, 128, 128, 1);
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// css header
+header {
+    margin: 20px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'r';
+        .logo {
+            a {
+                font-size: 32px;
+                color: $text-black-cl;
+
+            }
+        }
+        .cart {
+            background-color: $gray-cl;
+            padding: 10px 12px;
+            border-radius: 50%;
+            position: relative;
+            #cart__quantity {
+                position: absolute;
+                top: 5%;
+                right: -20%;
+                padding: 3px 6px;
+                border-radius: 50%;
+                background-color: $price-cl;
+                color: white;
+            }
+        }
+    } 
+}

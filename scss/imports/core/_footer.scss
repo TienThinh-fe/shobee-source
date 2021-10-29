@@ -1,0 +1,35 @@
+// css footer
+.cartfooter {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .total {
+            font-family: "b";
+            font-size: 20px;
+            color: $black-cl;
+            span {
+                font-size: 24px;
+                color: $price-cl;
+            }
+        }
+        .pay {
+            a {
+                font-family: "b";
+                color: $black-cl;
+                padding: 16px 28px;
+                border-radius: 5px;
+                background-color: rgba(196, 196, 196, 0.8);
+            }
+        }
+        .pay:hover {
+            a {
+                background-color: rgba(196, 196, 196, 1);
+            }
+        }
+    }
+}
